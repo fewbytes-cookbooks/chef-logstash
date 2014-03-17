@@ -6,7 +6,7 @@ days_to_keep      = node['logstash']['index_cleaner']['days_to_keep']
 log_file          = node['logstash']['index_cleaner']['cron']['log_file']
 
 python_pip "pyes" do
-  action :install
+  action :upgrade
 end
 
 directory base_dir do
